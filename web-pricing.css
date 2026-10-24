@@ -1,0 +1,23 @@
+.plan-prices {
+    display: grid;
+    gap: 5px;
+    width: 100%;
+    margin-top: 7px;
+    padding-right: 36px
+}
+
+.plan-prices>span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    color: #a4aaa4;
+    font-size: 11px;
+    line-height: 1.25
+}
+
+.plan-prices b {
+    color: var(--accent);
+    font: 500 12px var(--display);
+    white-space: nowrap
+}

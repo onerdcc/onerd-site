@@ -1,0 +1,267 @@
+.maintenance-page {
+    --accent: #b8a4ff
+}
+
+.care-hero .web-hero-glow {
+    background: radial-gradient(circle, rgba(184, 164, 255, .13), rgba(184, 164, 255, .025) 48%, transparent 72%)
+}
+
+.care-hero h1 span {
+    color: #b8a4ff
+}
+
+.care-art {
+    width: 42%;
+    right: 5%
+}
+
+.care-orbit {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    border: 1px solid rgba(184, 164, 255, .18);
+    border-radius: 50%;
+    animation: care-orbit 34s linear infinite
+}
+
+.care-orbit::before,
+.care-orbit::after {
+    content: "";
+    position: absolute;
+    inset: 24px;
+    border: 1px dashed rgba(184, 164, 255, .17);
+    border-radius: 50%
+}
+
+.care-orbit::after {
+    inset: -23px;
+    border-style: solid;
+    opacity: .55
+}
+
+.care-device {
+    position: relative;
+    z-index: 1;
+    width: 270px;
+    animation: care-float 5s ease-in-out infinite alternate;
+    filter: drop-shadow(0 18px 40px #0008)
+}
+
+.device-screen {
+    height: 190px;
+    border: 2px solid #77708f;
+    border-radius: 14px 14px 7px 7px;
+    background: linear-gradient(145deg, #292631, #18171c);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 40px rgba(184, 164, 255, .08), 0 0 45px rgba(184, 164, 255, .08)
+}
+
+.device-check {
+    width: 47px;
+    height: 47px;
+    border: 1px solid #9787cc;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: #c5b7ff;
+    font-size: 23px;
+    box-shadow: 0 0 28px rgba(184, 164, 255, .18)
+}
+
+.device-bars {
+    display: flex;
+    gap: 6px;
+    margin-top: 15px
+}
+
+.device-bars i {
+    display: block;
+    width: 25px;
+    height: 3px;
+    border-radius: 3px;
+    background: #645b7e
+}
+
+.device-bars i:first-child {
+    background: #b8a4ff
+}
+
+.device-progress {
+    width: 120px;
+    height: 4px;
+    border-radius: 5px;
+    background: #393442;
+    margin-top: 13px;
+    overflow: hidden
+}
+
+.device-progress i {
+    display: block;
+    height: 100%;
+    width: 78%;
+    background: #b8a4ff;
+    box-shadow: 0 0 10px #b8a4ff;
+    animation: care-progress 4s ease-in-out infinite alternate
+}
+
+.device-screen small {
+    font-size: 7px;
+    color: #9d96ac;
+    letter-spacing: 1.4px;
+    margin-top: 11px
+}
+
+.device-base {
+    height: 13px;
+    margin: 0 -14px;
+    background: linear-gradient(90deg, #454151, #88809a 50%, #454151);
+    clip-path: polygon(5% 0, 95% 0, 100% 100%, 0 100%);
+    border-radius: 0 0 9px 9px
+}
+
+.care-floating {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 13px;
+    border: 1px solid #393444;
+    border-radius: 9px;
+    background: #1d1b22;
+    color: #d6d0e6;
+    font-size: 8px;
+    letter-spacing: .6px;
+    box-shadow: 0 8px 30px #0006;
+    animation: care-float 5s ease-in-out infinite alternate
+}
+
+.care-floating>span {
+    width: 25px;
+    height: 25px;
+    border-radius: 7px;
+    background: #302a3e;
+    color: #c5b7ff;
+    display: grid;
+    place-items: center;
+    font-size: 13px
+}
+
+.care-floating small {
+    display: block;
+    color: #888394;
+    font-size: 7px;
+    margin-top: 4px;
+    letter-spacing: 0
+}
+
+.care-label-a {
+    left: -2%;
+    top: 22%
+}
+
+.care-label-b {
+    right: -4%;
+    bottom: 19%;
+    animation-delay: -2.2s
+}
+
+.care-service-grid .web-service-card {
+    min-height: 280px
+}
+
+.maintenance-page .web-service-icon {
+    color: #c5b7ff;
+    background: #292532;
+    border-color: #403a4e
+}
+
+.maintenance-page .web-card-featured {
+    background: linear-gradient(145deg, #282433, #1a1c1d 68%)
+}
+
+.maintenance-page .plan-prices b {
+    color: #c5b7ff
+}
+
+@keyframes care-orbit {
+    to {
+        rotate: 360deg
+    }
+}
+
+@keyframes care-float {
+    to {
+        transform: translateY(-9px)
+    }
+}
+
+@keyframes care-progress {
+    to {
+        width: 92%
+    }
+}
+
+@media(max-width:1000px) {
+    .care-art {
+        right: 1%;
+        width: 45%;
+        transform: translateY(-43%) scale(.85)
+    }
+
+    .care-orbit {
+        width: 280px;
+        height: 280px
+    }
+
+    .care-service-grid .web-service-card {
+        min-height: 285px
+    }
+}
+
+@media(max-width:650px) {
+    .care-hero {
+        padding-bottom: 420px
+    }
+
+    .care-art {
+        left: 0;
+        right: 0;
+        bottom: 13px;
+        top: auto;
+        width: 100%;
+        height: 370px;
+        transform: none;
+        scale: .8
+    }
+
+    .care-orbit {
+        width: 250px;
+        height: 250px
+    }
+
+    .care-device {
+        width: 245px
+    }
+
+    .device-screen {
+        height: 170px
+    }
+
+    .care-service-grid .web-service-card {
+        min-height: 250px
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+
+    .care-orbit,
+    .care-device,
+    .care-floating,
+    .device-progress i {
+        animation: none
+    }
+}
