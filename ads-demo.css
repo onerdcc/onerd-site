@@ -6,6 +6,7 @@
     border: 1px solid #353b39;
     border-radius: 14px;
     box-shadow: 0 18px 50px rgba(0, 0, 0, .18)
+    display: none; /**/
 }
 
 .demo-card-heading {
@@ -44,7 +45,6 @@
 }
 
 .demo-video {
-    display: none; /**/
     width: 100%;
     aspect-ratio: 16/9;
     overflow: hidden;
